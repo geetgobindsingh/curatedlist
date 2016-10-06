@@ -45,6 +45,7 @@ android {
         applicationId "com.learncircle.geet.UI.curatedlist"
         minSdkVersion 16
         targetSdkVersion 24
+        multiDexEnabled true
         versionName "${versionMajor}.${versionMinor}.${versionPatch}"
         versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -65,6 +66,7 @@ android {
             }
         }
     }
+
 }
 
 dependencies {
@@ -87,8 +89,10 @@ dependencies {
     compile('io.reactivex:rxjava:1.2.1')
     compile('com.android.support:support-vector-drawable:24.2.1')
     testCompile 'junit:junit:4.12'
-
     /* For Google Play Services */
-    compile 'com.google.android.gms:play-services-safetynet:8.3.0'
-    compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile('com.google.android.gms:play-services-safetynet:8.3.0')
+    compile('com.google.android.gms:play-services-auth:8.3.0')
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    //Conflicting Dependencies resolved
+    androidTestCompile('com.google.code.findbugs:jsr305:3.0.1')
 }
