@@ -5,8 +5,6 @@ android:
     # use the latest revision of Android SDK Tools
     # - platform-tools
     # - tools
-    - platform-tools
-    - tools
 
     # The BuildTools version used by your project
     - build-tools-24.0.2
