@@ -5,4 +5,7 @@ package com.learncircle.geet.util;
  */
 
 public class Globals {
+
+    // region SharedPref constants
+    public static final String SHARED_PREFS = "com.learncircle.geet.sharedprefs";
 }
