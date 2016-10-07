@@ -22,7 +22,7 @@ if(System.getenv("CARE_KEYSTORE") == null || System.getenv("CARE_KEYSTORE").equa
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    buildToolsVersion "23.0.3"
 
     signingConfigs {
         debug {
