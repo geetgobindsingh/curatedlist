@@ -55,13 +55,13 @@ android {
         debug {
             debuggable true
             signingConfig signingConfigs.debug
-            minifyEnabled true
+            minifyEnabled false
             shrinkResources true
         }
         if(isReleaseBuild) {
             release {
                 signingConfig signingConfigs.release
-                minifyEnabled true
+                minifyEnabled false
                 shrinkResources true
                 proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             }
