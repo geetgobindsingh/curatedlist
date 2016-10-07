@@ -103,3 +103,4 @@ dependencies {
     //Conflicting Dependencies resolved
     androidTestCompile('com.google.code.findbugs:jsr305:3.0.1')
 }
+
