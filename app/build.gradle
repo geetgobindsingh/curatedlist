@@ -29,7 +29,7 @@ android {
         debug {
             keyAlias 'CuratedList'
             keyPassword 'curatedlist'
-            storeFile file('build')
+            storeFile file('keys/curatedlist.jks')
             storePassword 'curatedlist'
         }
         if(isReleaseBuild) {
