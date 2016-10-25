@@ -26,8 +26,8 @@ public class CuratedListApplication extends Application {
         return sApplicationContext;
     }
 
-    public static SharedPreferences getAppSharedPrefs(){
-        if(sApplicationContext == null){
+    public static SharedPreferences getAppSharedPrefs() {
+        if (sApplicationContext == null) {
             return null;
         }
         return sApplicationContext.getSharedPreferences(Globals.SHARED_PREFS, MODE_PRIVATE);
