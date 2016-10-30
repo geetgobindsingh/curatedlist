@@ -17,7 +17,7 @@ apply plugin: 'android-apt'
 
 
 def isReleaseBuild = true
-if(System.getenv("CARE_KEYSTORE") == null || System.getenv("CARE_KEYSTORE").equals("")){
+if(System.getenv("CL_KEYSTORE") == null || System.getenv("CL_KEYSTORE").equals("")){
     isReleaseBuild = false
 }
 
