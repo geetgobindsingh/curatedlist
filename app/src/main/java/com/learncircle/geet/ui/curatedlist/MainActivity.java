@@ -50,8 +50,8 @@ public class MainActivity extends BaseActivity {
     public void setupShoppingViewPager()
     {
         ShoppingPagerAdapter adapter = new ShoppingPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(ShoppingListFragment.newInstance(), ShoppingListFragment.class.getSimpleName());
-        adapter.addFragment(MealsFragment.newInstance(), MealsFragment.class.getSimpleName());
+        adapter.addFragment(ShoppingListFragment.newInstance(), "SHOPPING LIST");
+        adapter.addFragment(MealsFragment.newInstance(), "MEALS");
         mViewPager.setAdapter(adapter);
         mViewPager.setOffscreenPageLimit(2);
     }

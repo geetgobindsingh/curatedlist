@@ -11,6 +11,10 @@ import com.learncircle.geet.ui.BaseFragment;
 
 public class MealsFragment extends BaseFragment {
 
+    //region constant variables
+    private static final String TAG = MealsFragment.class.getSimpleName();
+    //endregion
+
     //region public methods
     public static Fragment newInstance()
     {
