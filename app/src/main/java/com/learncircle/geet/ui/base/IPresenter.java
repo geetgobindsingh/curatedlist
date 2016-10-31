@@ -5,4 +5,17 @@ package com.learncircle.geet.ui.base;
  */
 
 public interface IPresenter {
+    void onCreate();
+
+    void onDestroy();
+
+    void onStart();
+
+    void onStop();
+
+    void onPause();
+
+    void onResume();
+
+    IView getView();
 }
