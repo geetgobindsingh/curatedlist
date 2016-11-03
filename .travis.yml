@@ -31,3 +31,6 @@ script:
 
 jdk:
   - oraclejdk8
+
+notifications:
+  slack: droidx:WjamYUmI3sKT6hUvIYYXNvZz
