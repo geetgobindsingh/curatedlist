@@ -7,5 +7,4 @@ import com.learncircle.geet.ui.base.IView;
  */
 
 public interface IMainView extends IView {
-    void initPresenter();
 }

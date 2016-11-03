@@ -43,7 +43,7 @@ public class MainActivity extends BaseActivity implements IMainView{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
+        initPresenter();
         setSupportActionBar(mToolbar);
         setupShoppingViewPager();
         mTabLayout.setupWithViewPager(mViewPager,true); //true to make autoRefresh TabLayout
@@ -59,13 +59,12 @@ public class MainActivity extends BaseActivity implements IMainView{
         mViewPager.setAdapter(adapter);
         mViewPager.setOffscreenPageLimit(2);
     }
+    private void initPresenter() {
+        mainPresenter = new MainPresenter(this);
+    }
     //endregion
 
     //region methods overridden
-    @Override
-    public void initPresenter() {
-        mainPresenter = new MainPresenter(this);
-    }
     //endregion
 
     //region private Adapter
