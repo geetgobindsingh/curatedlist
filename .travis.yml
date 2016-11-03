@@ -33,7 +33,8 @@ jdk:
   - oraclejdk8
 
 notifications:
-  slack: # droidx:WjamYUmI3sKT6hUvIYYXNvZz
+  slack:
     template:
-      - "%{repository} (%{commit}) : %{message} %{foo} "
-      - "Build details: %{build_url}"
+      - "%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
+      - "Change view : %{compare_url}"
+      - "Build details : %{build_url}"
