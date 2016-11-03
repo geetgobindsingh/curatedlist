@@ -5,7 +5,7 @@ android:
     # use the latest revision of Android SDK Tools
     - tools # to get the new `repository-11.xml`
     #- tools # see https://github.com/travis-ci/travis-ci/issues/6040#issuecomment-219367943)
-    - platform-tools
+    #- platform-tools
 
     # The BuildTools version used by your project
     - build-tools-24.0.2
